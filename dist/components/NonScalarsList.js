@@ -74,7 +74,9 @@ export function NonScalarsList({ results = [], extraConfig }) {
             const propertyId = s.slugify(data.name);
             if (componentConfig) {
                 const { component: ResultComponent, size, useRawData } = componentConfig;
-                const property = useRawData ? undefined : PropertyFactory.createProperty(updatedData);
+                const property = useRawData
+                    ? undefined
+                    : PropertyFactory.createProperty(updatedData);
                 widgetElements.push(
                 // We add the index to propertyID here to ensure a unique key exists for each property
                 // If we run into a bug in the future where we try to update the results dynamically, but they don't
