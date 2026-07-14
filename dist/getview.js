@@ -42,6 +42,12 @@ const PROPERTY_VIEWS = {
         color: "white",
         decimals: 3,
     },
+    [PropertyName.interfacial_energy]: {
+        icon: "entities.property.energy",
+        title: "Interfacial energy",
+        color: "white",
+        decimals: 3,
+    },
     [PropertyName.fermi_energy]: {
         icon: "entities.property.fermiEnergy",
         title: "Fermi energy",
