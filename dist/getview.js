@@ -48,6 +48,12 @@ const PROPERTY_VIEWS = {
         color: "white",
         decimals: 3,
     },
+    [PropertyName.defect_formation_energy]: {
+        icon: "entities.property.energy",
+        title: "Defect formation energy",
+        color: "white",
+        decimals: 3,
+    },
     [PropertyName.fermi_energy]: {
         icon: "entities.property.fermiEnergy",
         title: "Fermi energy",
