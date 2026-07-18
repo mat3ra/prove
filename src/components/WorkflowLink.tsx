@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import IconByName from "@exabyte-io/cove.js/dist/mui/components/icon";
+import IconByName from "@mat3ra/cove.js/dist/mui/components/icon";
 import type { WorkflowSchema } from "@mat3ra/esse/dist/js/types";
 import { Workflow } from "@mat3ra/wode";
 import Box from "@mui/material/Box";
