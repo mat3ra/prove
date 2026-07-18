@@ -1,6 +1,6 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import IconByName from "@mat3ra/cove.js/dist/mui/components/icon";
+import IconByName from "@mat3ra/cove/dist/mui/components/icon";
 import { Workflow } from "@mat3ra/wode";
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
