@@ -1,5 +1,5 @@
 import { jsx as _jsx } from "react/jsx-runtime";
-import ThemeProvider from "@exabyte-io/cove.js/dist/theme/provider";
+import ThemeProvider from "@mat3ra/cove/dist/theme/provider";
 import ReactDOM from "react-dom";
 import { ResultsView } from "./ResultsView";
 // eslint-disable-next-line  react/no-render-return-value
