@@ -1,4 +1,4 @@
-import ThemeProvider from "@mat3ra/cove/dist/theme/provider";
+import ThemeProvider from "@exabyte-io/cove.js/dist/theme/provider";
 import React from "react";
 import ReactDOM from "react-dom";
 

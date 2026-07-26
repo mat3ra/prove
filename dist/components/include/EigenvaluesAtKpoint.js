@@ -1,6 +1,6 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 /* eslint-disable react/no-array-index-key */
-import IconByName from "@mat3ra/cove/dist/mui/components/icon/IconByName";
+import IconByName from "@exabyte-io/cove.js/dist/mui/components/icon/IconByName";
 import { Utils } from "@mat3ra/utils";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
