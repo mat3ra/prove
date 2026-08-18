@@ -11,7 +11,8 @@
         "preview": "vite preview",
         "transpile": "tsc",
         "prettier": "prettier --check src tests",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "prepublishOnly": "npm run transpile"
     },
     "repository": {
         "type": "git",
