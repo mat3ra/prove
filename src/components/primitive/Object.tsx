@@ -79,7 +79,7 @@ function ObjectTable({ title, headers, rows }: ObjectTableProps) {
 export function OneLevelObject({ title, data, property }: OneLevelObjectProps) {
     const defaultTitle = React.useMemo(() => {
         if (property) {
-            return new Property(property).prettyName;
+            return Property.prettifyName(property.name);
         }
         return undefined;
     }, [property]);
@@ -105,7 +105,7 @@ export function OneLevelObject({ title, data, property }: OneLevelObjectProps) {
 
 export function ArrayOfObjects({ title, data, property }: OneLevelObjectProps) {
     const values = React.useMemo(
-        () => data?.values || property?.prop("values") || [],
+        () => data?.values || property?.prop("values" as Parameters<Property["prop"]>[0]) || [],
         [data, property],
     );
     const headers = React.useMemo(() => getArrayHeaders(values), [values]);
