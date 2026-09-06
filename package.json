@@ -35,7 +35,7 @@
         "@mat3ra/code": "2026.8.18-0",
         "@mat3ra/esse": "https://github.com/mat3ra/esse/releases/download/wip-1edcdfd/esse.tgz",
         "@mat3ra/made": "2026.8.18-0",
-        "@mat3ra/prode": "https://github.com/mat3ra/prode/releases/download/wip-bf3b2d4/prode.tgz",
+        "@mat3ra/prode": "https://github.com/mat3ra/prode/releases/download/wip-fb5d24c/prode.tgz",
         "@mat3ra/utils": "2026.8.18-1",
         "@mui/styles": "^5.11.9",
         "highcharts": "^6.2.0",
