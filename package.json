@@ -33,9 +33,9 @@
     "homepage": "https://github.com/Exabyte-io/prove",
     "dependencies": {
         "@mat3ra/code": "2026.8.18-0",
-        "@mat3ra/esse": "https://github.com/mat3ra/esse/releases/download/wip-8ef7ba5/esse.tgz",
+        "@mat3ra/esse": "https://github.com/mat3ra/esse/releases/download/wip-5acbbf7/esse.tgz",
         "@mat3ra/made": "2026.8.18-0",
-        "@mat3ra/prode": "https://github.com/mat3ra/prode/releases/download/wip-f320562/prode.tgz",
+        "@mat3ra/prode": "https://github.com/mat3ra/prode/releases/download/wip-5c50909/prode.tgz",
         "@mat3ra/utils": "2026.8.18-1",
         "@mui/styles": "^5.11.9",
         "highcharts": "^6.2.0",
