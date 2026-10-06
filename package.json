@@ -71,7 +71,7 @@
         "@mat3ra/ade": "2026.8.18-0",
         "@mat3ra/ide": "2026.8.18-0",
         "@mat3ra/mode": "2026.8.18-0",
-        "@mat3ra/standata": "https://github.com/mat3ra/standata/releases/download/wip-c63429d/standata.tgz",
+        "@mat3ra/standata": "https://github.com/mat3ra/standata/releases/download/wip-de4cde5/standata.tgz",
         "@mat3ra/tsconfig": "^2024.6.3-0",
         "@mat3ra/wode": "2026.8.18-0",
         "@mui/icons-material": "^5.11.0",
