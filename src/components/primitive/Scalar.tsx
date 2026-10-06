@@ -21,7 +21,8 @@ export function Scalar({ icon, title, units, value }: ScalarProps) {
             </Box>
             <Box className="count">
                 <Typography variant="body2" color="text.primary" className="scalar-title">
-                    {title} ({(units && UNIT_SYMBOLS[units]) || units})
+                    {title}
+                    {units ? ` (${UNIT_SYMBOLS[units] || units})` : ""}
                 </Typography>
                 <Typography variant="h5" className="scalar-value">
                     {value}

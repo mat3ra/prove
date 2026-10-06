@@ -12,6 +12,9 @@ import { Scalar } from "./primitive/Scalar";
 
 const { numberFormat } = Utils.str;
 
+// fields that tell apart several values of one property on one result, e.g. Sq and Sa, Al and Sc
+const QUALIFIER_FIELDS = ["parameter", "statistic", "element"] as const;
+
 // NOTE: asserting that the data is a scalar property data
 type ScalarPropertyData = Extract<PropertyData, { value: number }>;
 
@@ -48,14 +51,25 @@ export class ScalarsList extends React.Component<ScalarsListProps> {
             const config = getScalarViewConfig(result.name as PropertyName) || {};
             const propertyId = s.slugify(result.name);
             const units = "units" in result ? result.units : undefined;
+            const qualifier = QUALIFIER_FIELDS.map(
+                (field) => (result as Record<string, unknown>)[field],
+            ).find((value) => typeof value === "string");
+            const title = config.title || s.humanize(result.name);
             if (config) {
                 widgets.push(
-                    <Grid item xs={12} sm={6} md={3} key={propertyId} data-tid={propertyId}>
+                    <Grid
+                        item
+                        xs={12}
+                        sm={6}
+                        md={3}
+                        key={qualifier ? `${propertyId}-${qualifier}` : propertyId}
+                        data-tid={propertyId}
+                    >
                         <Box mb={2}>
                             <Scalar
                                 icon={config.icon || ""}
                                 value={numberFormat(result.value, config.decimals)}
-                                title={config.title || s.humanize(result.name)}
+                                title={qualifier ? `${title} ${qualifier}` : title}
                                 units={units}
                             />
                         </Box>
