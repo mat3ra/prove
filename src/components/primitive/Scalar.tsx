@@ -10,6 +10,9 @@ interface ScalarProps {
     units?: string;
 }
 
+// unit symbols as ESSE spells them (ASCII) -> as a reader expects them
+const UNIT_SYMBOLS: Record<string, string> = { um: "µm" };
+
 export function Scalar({ icon, title, units, value }: ScalarProps) {
     return (
         <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -18,7 +21,7 @@ export function Scalar({ icon, title, units, value }: ScalarProps) {
             </Box>
             <Box className="count">
                 <Typography variant="body2" color="text.primary" className="scalar-title">
-                    {title} ({units})
+                    {title} ({(units && UNIT_SYMBOLS[units]) || units})
                 </Typography>
                 <Typography variant="h5" className="scalar-value">
                     {value}
