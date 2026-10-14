@@ -68,6 +68,10 @@ const PROPERTY_VIEWS: Record<string, ComponentConfig> = {
 
 type SupportedPropertyName = keyof typeof PROPERTY_VIEWS;
 
+export function hasPropertyView(name: string): boolean {
+    return Object.hasOwn(PROPERTY_VIEWS, name);
+}
+
 function addPointsPath(data: any, extraConfig?: PropertiesProveExtraConfig) {
     if (
         ![PropertyName.band_structure, PropertyName.phonon_dispersions].includes(data?.name) ||
