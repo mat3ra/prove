@@ -1,5 +1,5 @@
 export { ScalarsList } from "./components/ScalarsList";
-export { NonScalarsList } from "./components/NonScalarsList";
+export { hasPropertyView, NonScalarsList } from "./components/NonScalarsList";
 export { ConvergencesList } from "./components/ConvergencesList";
 export { ResultsView } from "./ResultsView";
 

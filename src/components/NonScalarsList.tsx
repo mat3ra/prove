@@ -43,6 +43,7 @@ const PROPERTY_VIEWS: Record<string, ComponentConfig> = {
     [PropertyName.phonon_dos]: TWO_DIMENSIONAL_PLOT,
     [PropertyName.density_of_states]: TWO_DIMENSIONAL_PLOT,
     [PropertyName.band_structure]: TWO_DIMENSIONAL_PLOT,
+    [PropertyName.hysteresis_loop]: TWO_DIMENSIONAL_PLOT,
     [PropertyName.reaction_energy_profile]: TWO_DIMENSIONAL_PLOT,
     [PropertyName.potential_profile]: TWO_DIMENSIONAL_PLOT,
     [PropertyName.wavefunction_amplitude]: TWO_DIMENSIONAL_PLOT,
@@ -66,6 +67,10 @@ const PROPERTY_VIEWS: Record<string, ComponentConfig> = {
 };
 
 type SupportedPropertyName = keyof typeof PROPERTY_VIEWS;
+
+export function hasPropertyView(name: string): boolean {
+    return Object.hasOwn(PROPERTY_VIEWS, name);
+}
 
 function addPointsPath(data: any, extraConfig?: PropertiesProveExtraConfig) {
     if (
