@@ -54,6 +54,7 @@ const PROPERTY_VIEWS: Record<string, ComponentConfig> = {
     [PropertyName.magnetic_moments]: TENSOR,
     [PropertyName.final_structure]: { component: Structure, size: LARGE },
     [PropertyName.total_energy_contributions]: { component: OneLevelObject, size: LARGE },
+    [PropertyName.schottky_barrier_height]: { component: OneLevelObject, size: SMALL },
     [FORMATION_ENERGY_CONTRIBUTIONS]: { component: ArrayOfObjects, size: LARGE, useRawData: true },
     [PropertyName.jupyter_notebook_endpoint]: { component: OneLevelObject, size: LARGE },
     [PropertyName.band_gaps]: { component: BandGaps, size: LARGE },
