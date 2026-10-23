@@ -23,7 +23,9 @@ export type PropertyWithConfig =
     | PropertyName.thermal_correction_to_enthalpy
     | PropertyName.zero_point_energy
     | PropertyName.is_relaxed
-    | PropertyName.valence_band_offset;
+    | PropertyName.valence_band_offset
+    | PropertyName.schottky_barrier_height_p
+    | PropertyName.schottky_barrier_height_n;
 
 const PROPERTY_VIEWS: Record<PropertyWithConfig, ViewConfig> = {
     [PropertyName.pressure]: {
@@ -113,6 +115,18 @@ const PROPERTY_VIEWS: Record<PropertyWithConfig, ViewConfig> = {
     [PropertyName.valence_band_offset]: {
         icon: "entities.property.bandGap",
         title: "Valence Band Offset",
+        color: "white",
+        decimals: 3,
+    },
+    [PropertyName.schottky_barrier_height_p]: {
+        icon: "entities.property.bandGap",
+        title: "Schottky Barrier Height (p-type)",
+        color: "white",
+        decimals: 3,
+    },
+    [PropertyName.schottky_barrier_height_n]: {
+        icon: "entities.property.bandGap",
+        title: "Schottky Barrier Height (n-type)",
         color: "white",
         decimals: 3,
     },
