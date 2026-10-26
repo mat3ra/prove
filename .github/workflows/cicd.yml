@@ -8,7 +8,7 @@ concurrency:
 
 jobs:
   run-js-tests:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         node-version:
@@ -43,7 +43,7 @@ jobs:
   publish-js-package:
     needs:
       - run-js-tests
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     if: (github.repository != 'Exabyte-io/template-definitions') && (github.ref_name == 'main')
 
     steps:
@@ -67,7 +67,7 @@ jobs:
 
   deploy-bundle:
     needs: [publish-js-package]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         node-version:
