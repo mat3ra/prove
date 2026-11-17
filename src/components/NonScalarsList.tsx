@@ -91,8 +91,13 @@ export function NonScalarsList({ results = [], extraConfig }: NonScalarsListProp
 
     const widgets = React.useMemo(() => {
         const widgetElements: React.ReactElement[] = [];
+        const firstFinalStructureIndex = nonScalarResults.findIndex(
+            (data) => data.name === PropertyName.final_structure,
+        );
 
         nonScalarResults.forEach((data, index) => {
+            if (data.name === PropertyName.final_structure && index !== firstFinalStructureIndex)
+                return;
             const updatedData = addPointsPath(data, extraConfig);
             const componentConfig = PROPERTY_VIEWS[data.name as SupportedPropertyName];
             const propertyId = s.slugify(data.name);
