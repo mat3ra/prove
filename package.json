@@ -16,7 +16,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/Exabyte-io/prove.git"
+        "url": "https://github.com/mat3ra/prove.git"
     },
     "main": "dist/exports.js",
     "types": "dist/exports.d.ts",
@@ -27,10 +27,10 @@
     ],
     "author": "Exabyte Inc.",
     "bugs": {
-        "url": "https://github.com/Exabyte-io/prove/issues"
+        "url": "https://github.com/mat3ra/prove/issues"
     },
     "license": "Apache-2.0",
-    "homepage": "https://github.com/Exabyte-io/prove",
+    "homepage": "https://github.com/mat3ra/prove",
     "dependencies": {
         "@mui/styles": "^5.11.9",
         "highcharts": "^6.2.0",
