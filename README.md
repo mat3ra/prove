@@ -17,7 +17,7 @@ npm install @mat3ra/prove
 For development:
 
 ```bash
-git clone https://github.com/Exabyte-io/prove.git
+git clone https://github.com/mat3ra/prove.git
 ```
 
 
